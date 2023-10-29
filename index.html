@@ -11,14 +11,19 @@
 </head>
 
 <body>
-    <h1>JavaScript Code Compress</h1>
-    <textarea name="code" id="code" spellcheck="false"></textarea>
-    <textarea name="output" id="output" readonly></textarea>
-    <h1 id="btnh" onclick="navigator.clipboard.writeText(document.getElementById('output').value);">Click to copy output</h1>
-    <h1 id="btnh" onclick="downloadFile(document.getElementById('output').value, 'output.js');">Download code as file</h1>
-    <h1>The original code is <span id="codesize">0</span> bytes.</h1>
-    <h1>The compressed code is <span id="outsize">0</span> bytes.</h1>
-    <h1>Size gain is <span id="gainsize">0</span> bytes.</h1>
+    <div class="mbody">
+        <h1>JavaScript Code Compress</h1>
+        <textarea name="code" id="code" spellcheck="false" placeholder="Code"></textarea>
+        <textarea name="output" id="output" readonly>Output</textarea>
+        <h1 id="btnh" onclick="navigator.clipboard.writeText(document.getElementById('output').value);">Click to copy output</h1>
+        <div></div>
+        <h1 id="btnh" onclick="downloadFile(document.getElementById('output').value, 'output.js');">Download code as file</h1>
+        <div></div>
+        <h1>The original code is <span id="codesize">0</span> bytes.</h1>
+        <h1>The compressed code is <span id="outsize">0</span> bytes.</h1>
+        <h1>Size gain is <span id="gainsize">0</span> bytes.</h1>
+    </div>
+    <footer><h1>Author: <a href="https://www.github.com/sanalzio">Sanalzio</a></h1></footer>
     <script src="script.js"></script>
 </body>
 
